@@ -1,0 +1,859 @@
+body {
+    overflow-x: hidden;
+}
+
+p {
+    font-size: 16px;
+}
+
+p.small {
+    font-size: 13px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+    color: #ffff00;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 500;
+}
+
+hr.star-light,
+hr.star-primary {
+    margin: 25px auto 30px;
+    padding: 0;
+    max-width: 250px;
+    border: 0;
+    border-top: solid 5px;
+    text-align: center;
+}
+
+hr.star-light:after,
+hr.star-primary:after {
+    content: "\f005";
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    font-size: 2em;
+}
+
+hr.star-light {
+    border-color: #fff;
+}
+
+hr.star-light:after {
+    color: #fff;
+    background-color: #18bc9c;
+}
+
+hr.star-primary {
+    border-color: #2c3e50;
+}
+
+hr.star-primary:after {
+    color: #2c3e50;
+    background-color: #fff;
+}
+
+.img-centered {
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    color: #fff;
+     background-color: black;
+}
+
+header .container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+header img {
+    display: block;
+    margin: 10px auto 10px;
+}
+
+header .intro-text .name {
+    display: block;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+header .intro-text .skills {
+    font-size: 1.25em;
+    font-weight: 300;
+}
+
+@media(min-width:768px) {
+    header .container {
+        padding: 200px 0 100px;
+    }
+
+    header .intro-text .name {
+        font-size: 3em;
+    }
+
+    header .intro-text .skills {
+        font-size: 2em;
+    }
+}
+
+@media(min-width:768px) {
+    .navbar-fixed-top {
+        padding: 25px 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-fixed-top.navbar-shrink {
+        padding: 10px 0;
+    }
+
+    .navbar-fixed-top.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+}
+
+.navbar {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.navbar a:focus {
+    outline: 0;
+}
+
+.navbar .navbar-nav {
+    letter-spacing: 1px;
+}
+
+.navbar .navbar-nav li a:focus {
+    outline: 0;
+}
+
+.navbar-default,
+.navbar-inverse {
+    border: 0;
+}
+
+section {
+    padding: 100px 0;
+}
+
+section h2 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+section.success {
+    color: #fff;
+    background: #18bc9c;
+}
+
+@media(max-width:767px) {
+    section {
+        padding: 75px 0;
+    }
+
+    section.first {
+        padding-top: 75px;
+    }
+}
+
+#portfolio .portfolio-item {
+    right: 0;
+    margin: 0 0 15px;
+}
+
+#portfolio .portfolio-item .portfolio-link {
+    display: block;
+    /*position: relative;
+    margin: 0 auto;*/
+    max-width: 50%;
+    /*float:right;*/
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.portfolio-item .item-title {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+#portfolio .portfolio-item .full-width {
+    display: block;
+    position: relative;
+    margin: 0 auto !important;
+    max-width: 100% !important;
+}
+
+#portfolio .portfolio-item.image-left .portfolio-link {
+    max-width: 45%;
+     float:left !important;
+}
+#portfolio .portfolio-item.image-left .item-caption {
+    padding-left: 5%;
+    max-width: 45%;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption {
+    position: absolute;
+    width: 96%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(0,0,0,0.9);          /*rgba(24,188,156,.9);*/
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+    margin-right: -50%;
+    padding:5px;
+    overflow: hidden;
+}
+
+
+#portfolio .portfolio-item .portfolio-link .caption:hover {
+    opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+    width: 100%;
+    margin:0 auto;
+    color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content p {
+    font-size: 1.5em;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+    margin-top: -12px;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+    margin: 0;
+}
+
+#portfolio * {
+    z-index: 2;
+}
+
+#portfolio .portfolio-item .item-caption-right {
+    float:right;
+    width: 65%;
+    margin-left: 10px;
+}
+#portfolio .portfolio-item .item-caption-left {
+    float:left;
+    width: 50%;
+    margin-right: 10px;
+}
+
+.video-container {
+    overflow: hidden;  
+    width: 100%;
+    height: auto;
+}
+
+.video-container iframe {
+    width:100%;
+}
+
+@media (min-width:767px) {
+    #portfolio .portfolio-item {
+        margin: 0 0 30px;
+    }
+    
+    .black-theme #portfolio .portfolio-item {
+        margin: 0 0 10px;
+    }
+}
+
+
+.btn-outline {
+    margin-top: 15px;
+    border: solid 2px #fff;
+    font-size: 20px;
+    color: #fff;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+}
+
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
+    border: solid 2px #fff;
+    color: #fff;
+    background: #ffff00;
+}
+
+.floating-label-form-group {
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #eee;
+}
+
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+    z-index: 1;
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+    border: 0;
+    border-radius: 0;
+    font-size: 1.5em;
+    background: 0 0;
+    box-shadow: none!important;
+    resize: none;
+}
+
+.floating-label-form-group label {
+    display: block;
+    z-index: 0;
+    position: relative;
+    top: 2em;
+    margin: 0;
+    font-size: .85em;
+    line-height: 1.764705882em;
+    vertical-align: middle;
+    vertical-align: baseline;
+    opacity: 0;
+    -webkit-transition: top .3s ease,opacity .3s ease;
+    -moz-transition: top .3s ease,opacity .3s ease;
+    -ms-transition: top .3s ease,opacity .3s ease;
+    transition: top .3s ease,opacity .3s ease;
+}
+
+.floating-label-form-group::not(:first-child) {
+    padding-left: 14px;
+    border-left: 1px solid #eee;
+}
+
+.floating-label-form-group-with-value label {
+    top: 0;
+    opacity: 1;
+}
+
+.floating-label-form-group-with-focus label {
+    color: #18bc9c;
+}
+
+form .row:first-child .floating-label-form-group {
+    border-top: 1px solid #eee;
+}
+
+footer {
+    color: #fff;
+}
+
+footer h3 {
+    margin-bottom: 30px;
+}
+
+footer .footer-above {
+    padding-top: 50px;
+    background-color: #2c3e50;
+}
+
+footer .footer-col {
+    margin-bottom: 50px;
+}
+
+footer .footer-below {
+    padding: 25px 0;
+    background-color: #233140;
+}
+
+.btn-social {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 45px;
+}
+
+.btn:focus,
+.btn:active,
+.btn.active {
+    outline: 0;
+}
+
+.scroll-top {
+    z-index: 1049;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    width: 50px;
+    height: 50px;
+}
+
+.scroll-top .btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.scroll-top .btn:focus {
+    outline: 0;
+}
+
+.portfolio-modal .modal-content {
+    margin: 0;
+   /*min-height: 100%;*/
+    border: 0;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.portfolio-modal .modal-content h2 {
+    margin: 0;
+    /* font-size: 3em; */
+}
+
+.portfolio-modal .modal-content img {
+    margin-bottom:5px;
+}
+
+.portfolio-modal .modal-content .item-details {
+    margin: 30px 0;
+}
+
+.portfolio-modal .close-modal {
+    position: absolute;
+    bottom: 0%;
+    left:-80px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    cursor: pointer;
+}
+
+.portfolio-modal .close-modal:hover {
+    /*opacity: .3;*/
+    text-decoration: underline;
+}
+
+.portfolio-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.portfolio-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+/* making the modal scroll without the header */
+.modal-body {
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+    margin: 0;
+}
+
+.modal-header-image {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+/* text over image */
+.modal-header-image .image-container {
+    width: 100%;
+    height: 150px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.modal-header-image .text-over-image {
+  
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    background-color: rgba(255,255,255,0.4);
+}
+
+/*
+shachar addition
+
+align content to bottom of div
+
+
+    margin: auto !important;
+    margin-top: auto !important;
+    margin-left: auto !important;
+*/
+div.row.align-content-to-bottom {
+    position: relative;
+}
+
+p.align-content-to-bottom {
+    bottom: 0px;
+    margin-bottom: 0px !important;
+}
+
+
+/* end of align content */
+
+
+.img-clients {
+  max-height: 80px;
+    
+}
+
+
+/* footer to move between projects */
+.portfolio-modal-footer {
+    background-color: rgba(24,188,156,.9);
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.portfolio-modal {
+    overflow: hidden;
+   
+}
+
+.portfolio-item .img-left-to-text {
+    float: left;
+}
+
+.portfolio-item .img-right-to-text {
+    float: right;
+}
+
+
+/* inside the portfolio modal emphasis the main explanation of the product */
+.portfolio-modal .emphasized p {
+    font-size: 20px;
+    /*text-transform: uppercase;*/
+}
+
+
+@media (max-width: 950px) {
+    #portfolio .portfolio-item {
+        width: 100%;
+    }
+}
+
+@media (min-width: 950px) {
+    #portfolio .portfolio-item {
+        width: 45%;
+    }
+}
+
+
+
+/* */
+.image-caption {
+    text-align: center;
+    font-size: 15px !important;
+    font-style: italic;
+}
+
+
+/*  */
+
+section.long-list img.media-object {
+    width: 100px;
+    height: auto;
+}
+
+section.long-list li.selected-article:hover {
+     border-right: #ffff00 solid 1px;
+    
+}
+
+section.long-list li.media .media-body {
+ padding-right: 2px;   
+}
+
+section.long-list .selected-article .img-wrapper {
+    overflow: hidden;
+    width: 30%;
+    padding-right: 10px;
+    max-height: 120px;
+}
+
+ .img-wrapper img {
+     width:100% !important;
+ }
+
+.media-heading .title {
+    font-weight: 700;   
+    font-size: larger;
+}
+
+section.short-list img.media-object {
+    width:  110px;
+    padding-right: 10px;
+}
+
+section.long-list li.selected-article {
+    /*background-color: #2c3e50;*/
+    color: white;
+    border-right: rgba(0,0,0,0) solid 1px;
+}
+
+
+body.black-theme {
+    background-color: black;
+    color: white;
+}
+    
+.black-theme .navbar,
+.black-theme .footer-below
+{
+    background-color: #202020;   
+}
+
+.black-theme .navbar-nav>li>a {
+        color: #FFFF00;
+}
+
+.black-theme .navbar-nav>li>a:hover {
+    color: #FFFFff;
+    /*text-decoration: underline;*/
+}
+
+.black-theme .navbar-default .navbar-nav>.active>a, 
+.black-theme .navbar-default .navbar-nav>.active>a:hover, 
+.black-theme .navbar-default .navbar-nav>.active>a:focus {
+    background-color: #424242;
+    border-radius: 10px;
+    text-decoration:none;
+    cursor: default;
+}
+
+
+.black-theme .navbar-default .navbar-brand:hover, 
+.black-theme .navbar-default .navbar-brand:focus {
+    color: #FFFF00;
+}
+
+
+
+.black-theme .navbar-fixed-top {
+    padding-top:10px;
+    padding-bottom: 0;
+}
+
+.black-theme .portfolio-modal .modal-content {
+    background-color: rgba(0,0,0,0.95);
+    color: white;
+}
+
+@media(min-width:790px) {
+    .black-theme .modal {
+        padding-top: 10%;
+        padding-left: 50%;
+        padding-bottom: 10%; 
+        padding-right: 0;
+        top:0;
+    }
+}
+
+@media(max-width:789px) {
+    .black-theme .modal {
+        padding: 10%;
+        top:0;
+    }
+}
+
+.black-theme .modal-backdrop {
+    background-color: white;    
+}
+
+/* old center of page
+.portfolio-modal.modal {
+    padding: 2.5% 10% 5% 10%;
+    bottom:2.5%;
+}
+*/
+
+.black-theme #portfolio .portfolio-item .portfolio-link .caption .caption-content p {
+    font-size: 1.25em;
+}
+
+
+
+/*------------------------------*/
+/* my item designs */
+.any-item-spacing {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 3%;
+    margin-right: 3%;
+    
+    overflow: hidden;
+}
+
+.any-item-spacing a,
+.any-item-spacing a:hover
+{
+    text-decoration: none;
+    color: white;
+}
+
+/**
+- text justification: left / right / center
+    each p item would get its own text-align style according to the user setting
+    same goes for font size and family
+- 
+**/
+
+/*------------------------------*/
+/* standard: image above item caption */
+
+.standard-item .item-image-wrapper {
+    overflow: hidden;
+    max-height: 75px;
+    
+}
+
+.standard-item .item-image-wrapper:hover {
+    overflow: visible;
+}
+
+.standard-item .item-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+   
+}
+
+.standard-item .item-caption-bottom {
+    text-shadow: black 1px 1px 8px;
+}
+
+/*------------------------------*/
+/* title-first: title and then image and item caption. nothing different than standard, only the position of the title in html */
+
+.title-first-item .item-image-wrapper {
+    overflow: hidden;
+    max-height: 200px;
+}
+
+.title-first-item .item-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/*------------------------------*/
+/* caption-right-to-image item: image to the left of item caption */
+
+.caption-right-to-image-item .item-image-wrapper {
+    overflow: hidden;
+    max-height: 200px;
+    height: 100%;
+    width: 25%;
+    float: left;
+}
+
+.caption-right-to-image-item .item-image {
+    width: auto;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.caption-right-to-image-item .item-caption {
+   width: 70%;
+    float: right;
+}
+
+/*------------------------------*/
+/* caption-left-to-image item: image to the right of item caption */
+
+.caption-left-to-image-item .item-image-wrapper {
+    overflow: hidden;
+    max-height: 200px;
+    height: 100%;
+    width: 25%;
+    float: right;
+}
+
+.caption-left-to-image-item .item-image {
+    width: auto;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.caption-left-to-image-item .item-caption {
+   width: 70%;
+   float: left;
+}
+
+/* title-over-image: title abovethe image stuck on bottom and then item caption */
+
+.title-over-image-item .item-image-wrapper {
+    overflow: hidden;
+    max-height: 200px;
+}
+
+.title-over-image-item .item-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    z-index: 1;
+   
+}
+
+.title-over-image-item .item-caption-over-image-bottom {
+    position: absolute;
+    bottom:50%;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    z-index: 10;
+   
+}
+
+/*------------------------------*/
