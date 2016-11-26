@@ -1,5 +1,7 @@
 body {
     overflow-x: hidden;
+    font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+   
 }
 
 p {
@@ -92,8 +94,7 @@ header img {
 header .intro-text .name {
     display: block;
     text-transform: uppercase;
-    font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 5em;
+     font-size: 5em;
     font-weight: 700;
 }
 

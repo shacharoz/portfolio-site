@@ -30,7 +30,67 @@
     
     
     <style type="text/css">
-      
+      /* general design */
+
+        .navbar-nav {
+            font-size: 12px; 
+        }
+        
+        
+        #brief {
+            position:absolute; bottom:0px; left:0px; 
+            width:45%; padding:20px;
+        }
+        
+        #info {
+            position:absolute; bottom:0px; right:0px; 
+            width:45%; padding:20px;
+        }
+        
+        .title {
+            text-transform: uppercase;
+             font-size: 3em;
+            font-weight: 700;
+            
+            text-shadow: black 1px 1px 8px; 
+        }
+        
+        .skills {
+            font-size: 20px;
+            text-shadow: black 1px 1px 8px; 
+        }
+        
+        .quote {
+            font-size: 14px;
+            font-style: italic;
+        }
+        
+        
+        /* remove brief on small screen */
+
+         @media(max-width:600px) {
+             #brief {
+                 visibility: hidden;
+             }
+             
+             #info {
+                 width: 100%;
+             }
+        }
+        
+        @media(min-width:600px) {
+             #brief {
+                 visibility: visible;
+             }
+             
+             #info {
+                 width: 45%;
+             }
+        }
+        
+        
+        
+        /*
         @media(max-width:400px) {
             body {
                 font-size: 60%;
@@ -42,10 +102,22 @@
                 font-size: 100%;
             }
         }
+        */
         
-        
-        
-        @media(min-width:768px) {
+        /* worry for the image fit window */
+         @media(max-width:767px) {
+            .img-fit-window {
+                height: 100%;
+                width: auto;
+               
+            }
+             
+            .fit-container {
+                height: 100%;
+                position: absolute;
+            }
+        }
+        @media(min-width:800px) {
             .img-fit-window {
                 width: 100%;
                 height: auto;
@@ -56,26 +128,13 @@
                 position: absolute;
             }
         }
-        
-        @media(max-width:767px) {
-            .img-fit-window {
-                width: auto;
-                height: 100%;
-            }
-             
-            .fit-container {
-                height: 100%;
-                position: absolute;
-            }
-        }
+      
       
     </style>
 </head>
 
 <body id="page-top" class="index black-theme" style="
-    height: 100%;
-    overflow: hidden;
-">
+    height: 100%; overflow: hidden; ">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -123,46 +182,115 @@
         <div class="fit-container">
             <img class="img-fit-window" src="../media/shachar/portfolio/uxi-nui-lecture.jpg" />
         </div>
-        
-        <div class="container" style="position:absolute; bottom:0px; right:0px;">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-4" style="text-shadow: 1px 1px 5px #000000;">
+            <!--    
+       
+       <div style="position:absolute; bottom:30px; left:20px; 
+                    width:100%">
+           
+           
+            <div style="width:40%">
+               <p style="background:#ff6600; font-size:20px; text-align:left"> Senior experience designer and educational game developer specializing in motion tracking, augmented reality and gesture recognition. Co-founded "FLUX: learning experiences", a design agency working to create engaging learning experiences. Activist in the local design, development, gaming and ed-tech communities.</p>
+           </div>
+       
+            <div style="width:40%">
+                <div class="intro-text">
+                    <span class="name">designing <br/>learning <br/>experiences</span>
+                    <span class="skills">UX - Game design - Education - Entrepreneurship</span>
+                    <ul class="list-inline">
+                        <li><a href="http://www.linkedin.com/in/ozshachar" class="btn-social btn-outline" title="linkedin profile"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                         <li><a href="https://www.behance.net/shacharoz" title="behance portfolio" class="btn-social btn-outline"><i class="fa fa-fw fa-behance" aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="https://github.com/shacharoz" title="github projects" class="btn-social btn-outline"><i class="fa fa-fw fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="https://twitter.com/ShacharOz" title="twitter profile" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="https://www.facebook.com/shacharoz" title="facebook profile" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="mailto:shachar.oz@gmail.com" title="send me an email" class="btn-social btn-outline"><i class="fa fa-fw fa-envelope" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                    
+                    <p class="image-caption">"It seems that you've been living two lives..." [The Matrix, 1999]</p>
+
+                    <br>Copyright &copy; 2015 - Shachar Oz
+                </div>
+           </div>
+       </div> 
+       
+       
+       
+               <!--    
+       
+        <div class="container" >
+            <div class="row" style="position:absolute; bottom:20px; right:20px;">
+
+                <div class="col-sm-12" style="text-shadow: 1px 1px 5px #000000;">
                     <div class="intro-text">
                         <span class="name">designing <br/>learning <br/>experiences</span>
                         <span class="skills">UX - Game design - Education - Entrepreneurship</span>
                         
-                        <p class="image-caption">"It seems that you've been living two lives..." [The Matrix, 1999]</p>
-                        
-                        
                     </div>
-                    
+          
                     <ul class="list-inline">
-                            <li><a href="http://www.linkedin.com/in/ozshachar" class="btn-social btn-outline" title="linkedin profile"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i></a>
-                            </li>
-                            <!--li><a href="https://plus.google.com/+ShacharOz" title="google plus profile" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i></a>
-                            </li-->
-                            <li><a href="https://www.behance.net/shacharoz" title="behance portfolio" class="btn-social btn-outline"><i class="fa fa-fw fa-behance" aria-hidden="true"></i></a>
-                            </li>
-                            <li><a href="https://github.com/shacharoz" title="github projects" class="btn-social btn-outline"><i class="fa fa-fw fa-github" aria-hidden="true"></i></a>
-                            </li>
-                            <li><a href="https://twitter.com/ShacharOz" title="twitter profile" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i></a>
-                            </li>
-                            <li><a href="https://www.facebook.com/shacharoz" title="facebook profile" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i></a>
-                            </li>
-                            <li><a href="mailto:shachar.oz@gmail.com" title="send me an email" class="btn-social btn-outline"><i class="fa fa-fw fa-envelope" aria-hidden="true"></i></a>
-                            </li>
-                        </ul>
+                        <li><a href="http://www.linkedin.com/in/ozshachar" class="btn-social btn-outline" title="linkedin profile"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                         <li><a href="https://www.behance.net/shacharoz" title="behance portfolio" class="btn-social btn-outline"><i class="fa fa-fw fa-behance" aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="https://github.com/shacharoz" title="github projects" class="btn-social btn-outline"><i class="fa fa-fw fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="https://twitter.com/ShacharOz" title="twitter profile" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="https://www.facebook.com/shacharoz" title="facebook profile" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="mailto:shachar.oz@gmail.com" title="send me an email" class="btn-social btn-outline"><i class="fa fa-fw fa-envelope" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
                     
+                    <p class="image-caption">"It seems that you've been living two lives..." [The Matrix, 1999]</p>
+
                     <br>Copyright &copy; 2015 - Shachar Oz
                  </div>
                 </div>
            
+              
            </div>
-       
+        -->
     </header>
 
     
-    
+    <footer style="position:absolute; bottom:0px;     width:100%">
+        <div id="brief">
+            <p class="title">brief</p>
+            
+            <p style="background-color: rgba(255,102,0,0.5); font-size:20px; text-align:left"> Senior experience designer and educational game developer specializing in motion tracking, augmented reality and gesture recognition. Co-founded "FLUX: learning experiences", a design agency working to create engaging learning experiences. Activist in the local design, development, gaming and ed-tech communities.</p>
+        </div>
+          <div id="info">
+            <p class="title">designing learning experiences</p>
+            <p class="skills">UX - Game design - Education - Entrepreneurship</p>
+
+
+
+            <ul class="list-inline">
+                <li><a href="http://www.linkedin.com/in/ozshachar" class="btn-social btn-outline" title="linkedin profile"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i></a>
+                </li>
+                 <li><a href="https://www.behance.net/shacharoz" title="behance portfolio" class="btn-social btn-outline"><i class="fa fa-fw fa-behance" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="https://github.com/shacharoz" title="github projects" class="btn-social btn-outline"><i class="fa fa-fw fa-github" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="https://twitter.com/ShacharOz" title="twitter profile" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="https://www.facebook.com/shacharoz" title="facebook profile" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="mailto:shachar.oz@gmail.com" title="send me an email" class="btn-social btn-outline"><i class="fa fa-fw fa-envelope" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+
+            <p class="quote">"It seems that you've been living two lives..." [The Matrix, 1999]</p>
+
+            <p>Copyright &copy; 2015 - Shachar Oz</p>
+        </div>
+    </footer>
     
     
      <!-- Load JavaScript -->
