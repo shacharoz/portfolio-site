@@ -66,10 +66,19 @@
         }
         
         
+        .orange-bg {
+            background-color: rgba(255,102,0,0.5); 
+            font-size:20px; 
+            text-align:left;
+        }
+        
         /* remove brief on small screen */
-
-         @media(max-width:600px) {
-             #brief {
+       
+        
+        @media screen 
+          and (min-width: 300px)
+          and (max-width: 660px) {
+            #brief {
                  visibility: hidden;
              }
              
@@ -78,8 +87,9 @@
              }
         }
         
-        @media(min-width:600px) {
-             #brief {
+        @media screen 
+            and (min-width: 660px) {
+              #brief {
                  visibility: visible;
              }
              
@@ -88,24 +98,24 @@
              }
         }
         
-        
-        
-        /*
-        @media(max-width:400px) {
-            body {
-                font-size: 60%;
-            }
-        }
-        
-        @media(min-width:400px) {
-            body {
-                font-size: 100%;
-            }
-        }
-        */
-        
         /* worry for the image fit window */
-         @media(max-width:767px) {
+        @media screen 
+          and (min-aspect-ratio: 4/3)
+        {
+            .img-fit-window {
+                width: 100%;
+                height: auto;
+            }
+            
+            .fit-container {
+                width: 100%;
+                position: absolute;
+            }
+        }
+        
+         @media screen 
+          and (max-aspect-ratio: 4/3)
+        {
             .img-fit-window {
                 height: 100%;
                 width: auto;
@@ -117,24 +127,12 @@
                 position: absolute;
             }
         }
-        @media(min-width:800px) {
-            .img-fit-window {
-                width: 100%;
-                height: auto;
-            }
-            
-            .fit-container {
-                width: 100%;
-                position: absolute;
-            }
-        }
-      
-      
+        
     </style>
 </head>
 
 <body id="page-top" class="index black-theme" style="
-    height: 100%; overflow: hidden; ">
+    height: 100%; overflow:hidden; ">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -147,7 +145,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top">shachar oz</a>
+                <span style="padding: 18.5px 15px 20.5px; 
+                             float: left;
+                            font-size: 14px;">shachar oz</span>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -263,11 +263,11 @@
         <div id="brief">
             <p class="title">brief</p>
             
-            <p style="background-color: rgba(255,102,0,0.5); font-size:20px; text-align:left"> Senior experience designer and educational game developer specializing in motion tracking, augmented reality and gesture recognition. Co-founded "FLUX: learning experiences", a design agency working to create engaging learning experiences. Activist in the local design, development, gaming and ed-tech communities.</p>
+            <p class="orange-bg">Senior experience designer and educational game developer specializing in motion tracking, augmented reality and gesture recognition. Co-founded "FLUX: learning experiences", a design agency working to create engaging learning experiences. Activist in the local design, development, gaming and ed-tech communities.</p>
         </div>
           <div id="info">
             <p class="title">designing learning experiences</p>
-            <p class="skills">UX - Game design - Education - Entrepreneurship</p>
+            <p class="orange-bg">UX, Games, Toys - Education - Entrepreneurship - Social Activism</p>
 
 
 

@@ -335,7 +335,7 @@ img {
   border-radius: 50%;
 }
 hr {
-  margin-top: 21px;
+  /*margin-top: 21px;*/
   margin-bottom: 21px;
   border: 0;
   border-top: 1px solid #ecf0f1;
@@ -401,7 +401,7 @@ h2,
 .h2,
 h3,
 .h3 {
-  margin-top: 21px;
+  margin-top: 30px;
   margin-bottom: 10.5px;
 }
 h1 small,
@@ -4578,7 +4578,7 @@ a.thumbnail.active {
 }
 .media,
 .media .media {
-  margin-top: 15px;
+  margin-top: 25px;
 }
 .media:first-child {
   margin-top: 0;
