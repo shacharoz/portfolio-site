@@ -1,0 +1,245 @@
+/*
+color pallete:
+color1              #00897b teal darken-1
+                    rgb(82,107,76)
+color2              #00acc1 cyan darken-1
+                    #b3e5fc light-blue lighten-4
+                    rgb(198,216,209)
+                    D7E9E9
+*/
+
+
+/* fonts */
+@font-face{font-family:"Roboto";src:local(Roboto Thin),url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/fonts/roboto/Roboto-Thin.eot");src:url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/fonts/roboto/Roboto-Thin.eot?#iefix") format("embedded-opentype"),url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/fonts/roboto/Roboto-Thin.woff2") format("woff2"),url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/fonts/roboto/Roboto-Thin.woff") format("woff"),url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/fonts/roboto/Roboto-Thin.ttf") format("truetype");font-weight:200}
+
+@font-face{font-family:"Roboto";src:local(Roboto Light),url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/fonts/roboto/Roboto-Light.eot");src:url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/fonts/roboto/Roboto-Light.eot?#iefix") format("embedded-opentype"),url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/fonts/roboto/Roboto-Light.woff2") format("woff2"),url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/fonts/roboto/Roboto-Light.woff") format("woff"),url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/fonts/roboto/Roboto-Light.ttf") format("truetype");font-weight:300}
+
+@font-face{font-family:"Roboto";src:local(Roboto Regular),url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/fonts/roboto/Roboto-Regular.eot");src:url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/fonts/roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"),url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/fonts/roboto/Roboto-Regular.woff2") format("woff2"),url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/fonts/roboto/Roboto-Regular.woff") format("woff"),url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/fonts/roboto/Roboto-Regular.ttf") format("truetype");font-weight:400}
+
+@font-face{font-family:"Roboto";src:url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/fonts/roboto/Roboto-Medium.eot");src:url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/fonts/roboto/Roboto-Medium.eot?#iefix") format("embedded-opentype"),url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/fonts/roboto/Roboto-Medium.woff2") format("woff2"),url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/fonts/roboto/Roboto-Medium.woff") format("woff"),url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/fonts/roboto/Roboto-Medium.ttf") format("truetype");font-weight:500}
+
+@font-face{font-family:"Roboto";src:url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/fonts/roboto/Roboto-Bold.eot");src:url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/fonts/roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"),url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/fonts/roboto/Roboto-Bold.woff2") format("woff2"),url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/fonts/roboto/Roboto-Bold.woff") format("woff"),url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/fonts/roboto/Roboto-Bold.ttf") format("truetype"); font-weight:700}
+
+    
+    
+    
+.white-theme {
+    color: black;
+    background-color: white;
+    font-family: "Roboto";
+}
+
+
+
+
+section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    padding-left:250px;
+}
+
+
+@media screen and (min-width: 650px) {
+    .section {
+        padding-left:250px;
+    }
+}
+  
+@media screen and (max-width: 650px) {
+    .section {
+        padding-left:0px;
+    }
+}
+    
+
+section .container-pushed-right {
+    margin-left: 0px;
+}
+
+
+
+
+.brief-header .name {
+    color: #D7E9E9;
+}
+
+.brief-header .brief {
+    text-align: justify;
+    color: white;
+}
+
+.brief-header .job {
+    text-align: right;
+    color: white;
+}
+
+
+
+
+
+
+
+.long-list .section-title {
+    text-transform: uppercase;
+}
+
+.long-list .title {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.long-list .description {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.long-list .year {
+    color: rgb(125,125,125);
+    margin-top: 3px;
+}
+
+.long-list .office {
+    font-size: 12px;
+    font-style: italic;
+    color: rgb(170,170,170);
+}
+
+.long-list li.media{
+    margin-top: 0px;
+}
+
+.long-list li.media i {
+    font-size: 12px;
+    color: #D7E9E9; 
+    margin-top: 4px;
+}
+
+
+
+h2.section-title {
+    position: relative;
+    z-index: 1;
+    margin-top: 0px;
+    color: rgb(170,170,170);
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+h2.section-title:before {
+  border-top: 1px solid #D7E9E9; 
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 25%;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  z-index: -1;
+}
+h2.section-title span {
+  /* to hide the lines from behind the text, you have to set the background color the same as the container */
+    background: #fff;
+    padding: 0;
+    padding-right: 35px;
+}
+
+
+
+
+
+h2 i {
+    background-color: #D7E9E9;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    margin-top: -12px;
+}
+
+
+
+
+
+
+
+.side-bar {
+    background-color: #D7E9E9;
+    position:absolute;
+    margin-left:20px;
+    width: 230px;
+    height: 1600px;
+    top: 0; 
+    box-shadow: 0px 0px 15px #000;
+}
+
+@media screen and (min-width: 990px) {
+    .side-bar {
+        height: 1600px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .side-bar {
+        height: 1210px;
+    }
+    
+    .section{padding-left: 0px;}
+}
+
+
+
+.side-bar .name {
+    text-align: right;
+}
+
+.side-bar .quote {
+    font-size: 24px;
+    color: white;
+}
+
+.side-bar .points {
+    color: rgb(82,107,76);
+    font-size: 12px;
+    list-style: none;
+    padding-left: 5px;
+}
+
+
+.side-bar .points li {
+    margin-top: 10px;
+}
+
+.side-bar .points li i {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+.portfolio-item{
+    padding: 5px;
+}
+.portfolio-item:hover {
+    background-color: rgb(222,235,247);
+}
+
+
+
+footer .footer-below {
+    border-top: 1px solid #D7E9E9;
+    background-color: white;
+    color: #D7E9E9;
+    font-size: 16px;
+}
